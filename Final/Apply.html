@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-container">
+        <a class="navbar-brand" href="Home.html"><img src="Shelton.gif" style="width: 150px;" height="150px;";></a>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="meettheinstructor.html">Meet the instructor</a></li>
+          <li><a href="Apply.html">Apply</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <table style="background-color: rgb(210, 180, 140);" style="width:100%;">
+        <tr> 
+            <th colspan = "2"; style="width: 5000px;"><h1>Apply today! Send us your information <span style="color: red"> below!</span></h1></th>
+        <tr>
+            <th>
+            <form>
+                <fieldset>
+                    <legend>Contact information</legend>
+                <div>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+                </div>
+                <div>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                </div>
+                <div>
+                    <label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email" name="email" placeholder="ABC123@gmail.com" required>
+                </div>
+                <div>
+                    <label for="phonenumber">Phone Number:</label>
+                        <input type="tel" id="phonenumber" placeholder="(123)456-7890">
+            </fieldset>
+            <fieldset>
+                <legend>Gender and Birthdate</legend>
+                <div>
+                    <label for="bdate">Birthdate: </label>
+                    <input type="date" id="bdate" name="bdate" required>
+                </div>
+                <div>
+                    <label for = "gender">Gender:</label>
+                    <br>
+        
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+        
+                    <label for="Female">Female</label>
+                    <input type="radio" id="Female" name="gender" value="female">
+        
+                </div>
+            </fieldset>
+            <br>
+            <label for="comment">Questions you have:</label>
+            <textarea id="comment" rows="3" cols="25" name="comment" value="comment"></textarea>
+        
+            <br><br>
+                <div>
+                    <label for="noticed">How did you hear about us?</label>
+                    <select id ="noticed" name="noticed">
+                        <option value="socialmedia">Social Media</option>
+                        <option value="Newspaper">News Paper</option>
+                        <option value="TV">TV</option>
+                        <option value="Mailflier">Mail flier</option>
+                    </select>
+                </div>
+            <br>
+                <div>
+                    <label for="subscribe">Subscribe for more emails</label>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                </div>
+            <br>
+            <div>
+                <label for = "payment">There is a $50.00 registration fee, how will you pay:</label>
+                <br>
+    
+                <label for="cash">Cash</label>
+                <input type="radio" id="cash" name="cash " value="cash">
+    
+                <label for="card">Card</label>
+                <input type="radio" id="card" name="card" value="card">
+
+                <label for="check">Check</label>
+                <input type="radio" id="check" name="check" value="check">
+
+                <label for="electric">E-Payment</label>
+                <input type="radio" id="electric" name="electric" value="electric">
+    <br><br>
+            </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </th>
+    
+
+    </body>
+</html>
