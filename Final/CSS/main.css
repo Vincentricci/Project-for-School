@@ -1,3 +1,5 @@
+/* FONT CONNECTION */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
     box-sizing:border-box;
@@ -7,46 +9,62 @@
     margin: 0;
     min-height: 100vh; 
     min-height: 100svh;
-      background-image: url(../Images/Mainpicture.png);
-      background-repeat: none;
-      background-position: center;
-      background-attachment: scroll;
-      background-size:100%;
+    /*background-image: url(../Images/Mainpicture.png);*/
+    background-repeat: none;
+    background-position: center;
+    background-attachment: scroll;
+    background-size:100%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    background-color: #151515;
   }
   
   nav {
-    background: hsl(200 70% 10%);
-    color: hsl(0 0% 100%);
-    font-family: system-ui;
+    background: #0f0f0f;
     position: sticky;
     top:0;
   }
+
   nav a {
     display: block;
     text-decoration: none;
-    color: inherit;
+    font-weight: 500;
+    color: #eaeaea;
+    margin: 0;
+    transition: all .2s;
   }
+
+  nav a:hover {
+    color: #909090;
+    transition: all .2s;
+  }
+  
   nav .navbar-container {
     display: flex;
     justify-content: space-between;
   }
+
   nav .navbar-brand img {
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
+
   nav ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style:none;
   }
+
   nav ul a {
     padding: 3em;
   }
 
 p {
-  font-family: Georgia, serif;
+
   font-weight: lighter;
   text-align: left;
 }
@@ -69,3 +87,107 @@ img{
   margin-right: auto;
 }
 
+#part1 {
+  background-color: #0f0f0f;
+  padding: 50px;
+}
+
+#part1 p {
+  color: #bebebe;
+}
+
+#part1 h1 {
+  color: #dcdcdc;
+}
+
+#part1 span {
+  color: #ff3939;
+}
+
+#part1 img {
+  margin-right: 50px;
+  border-radius: 8px;
+}
+
+#part2 {
+  width: 100%;
+  background-color: #ebebeb;
+  
+}
+
+#part2 img {
+  display: block;
+  left: 100%;
+}
+
+#part2 img{
+  margin-left: 236px;
+}
+
+#part2 p {
+  text-align: center;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+/* APPLY PAGE */
+.applyPage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.applyContent legend {
+  color: #ababab;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.applyContent h1 {
+  color: #d2d2d2;
+  margin-bottom: px;
+}
+
+.applyContent span {
+  color: #ff3939;
+}
+
+.applyContent label {
+  color: #787878;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.applyContent table{
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.applyContent fieldset {
+  border: none;
+}
+
+#fname, #lname, #email, #phonenumber {
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #0f0f0f;
+  margin-top: 20px;
+  transition: all .2s;
+
+}
+
+.applyContent input {
+  color: #787878;
+}
+
+.applyContent input:focus {
+  border: none;
+  color: #d2d2d2;
+  background-color: #ff0000;
+  transition: all .2s;
+}
